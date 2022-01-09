@@ -4,6 +4,8 @@ This repository demonstrates how drag and drop can be implemented in both a desk
 
 It allows you to move virtual chess pieces on a virtual board but **it does play chess**. It will not limit pieces to legal chess moves. You can move pieces to any square, including squares that currently contain a piece of the same colour.
 
+[Check out the demo](https://dciforks.github.io/drag-and-drop/).
+
 ## Things to note
 
 In the script.js file, after line 200, you can find some powerful generic functions:
