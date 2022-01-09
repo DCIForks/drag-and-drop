@@ -99,6 +99,7 @@ const findSquareClasses = (className) => (
 * indicating exactly which piece (or the board itself) was clicked.
 */
 document.getElementById("game").addEventListener("mousedown", startDrag)
+document.getElementById("game").addEventListener("touchstart",startDrag)
 
 
 function startDrag(event) {
