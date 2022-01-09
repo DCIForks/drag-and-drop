@@ -63,7 +63,7 @@ let boardLeft
 /** Called by placePieces and placePiece
  *
  * @param {String}  type is one of:
- *                 "king", "queen", "bishop", "knight", "rook". "pawn"
+ *                  "king", "queen", "bishop", "knight", "rook". "pawn"
  * @param {integer} index has a value between 0 and 7
  *
  * @returns         a string with the format "c-X" or "r-Y", where X is
@@ -98,8 +98,8 @@ const findSquareClasses = (className) => (
 * callback function will receive an event with a <target> property,
 * indicating exactly which piece (or the board itself) was clicked.
 */
-document.getElementById("game").addEventListener("mousedown", startDrag)
-document.getElementById("game").addEventListener("touchstart",startDrag)
+game.addEventListener("mousedown", startDrag)
+game.addEventListener("touchstart",startDrag)
 
 
 function startDrag(event) {
@@ -115,7 +115,6 @@ function startDrag(event) {
 
   // Add a temporary class to change the piece's z-index
   piece.classList.add("dragging");
-
 
   // Get the position and dimensions of the game board just in time
   // (because the player may have resized the window). Note the use
@@ -138,7 +137,6 @@ function startDrag(event) {
   // ... and the element's top and left.
   const { left, top } = piece.getBoundingClientRect()
   offset = { x: x - left - boardLeft, y: y - top - boardTop }
-
 
   // Define an action for when the drag action ends. This will be sent
   // in the argument to the generic startTracking function below.
