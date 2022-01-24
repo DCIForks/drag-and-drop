@@ -2,7 +2,7 @@
 
 This repository demonstrates how drag and drop can be implemented in both a desktop browser and on a touch screen.
 
-It allows you to move virtual chess pieces on a virtual board but **it does play chess**. It will not limit pieces to legal chess moves. You can move pieces to any square, including squares that currently contain a piece of the same colour.
+It allows you to move virtual chess pieces on a virtual board but **it does not play chess**. It will not limit pieces to legal chess moves. You can move pieces to any square, including squares that currently contain a piece of the same colour.
 
 [Check out the demo](https://dciforks.github.io/drag-and-drop/).
 
