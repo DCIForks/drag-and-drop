@@ -93,7 +93,7 @@
 
 
 
- const getPageXY = (event) => {
+const getPageXY = (event) => {
   if (event.targetTouches && event.targetTouches.length) {
     event = event.targetTouches[0] || {}
   }
